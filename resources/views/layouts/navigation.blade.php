@@ -5,16 +5,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item{{request()->path() == '/' ? ' active':''}}">
           <a class="nav-link" href="/">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item{{request()->path() == 'about' ? ' active':''}}">
           <a class="nav-link" href="/about">About</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item{{request()->path() == 'contact' ? ' active':''}}">
           <a class="nav-link" href="/contact">Contact</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item{{request()->path() == 'login' ? ' active':''}}">
           <a class="nav-link" href="/login">Login</a>
         </li>
       </ul>
