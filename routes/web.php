@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController');
 Route::get('/contact', 'ContactController');
 Route::get('/about','AboutController');
+Route::get('/posts/{slug}','PostController@show');
 Route::view('/login','login');
 
