@@ -10,7 +10,5 @@ $factory->define(Post::class, function (Faker $faker) {
         'title' => $faker->sentence(),
         'slug' => \Str::slug($faker->sentence()),
         'body' => $faker->paragraph(10),
-
-
     ];
 });

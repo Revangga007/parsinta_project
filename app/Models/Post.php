@@ -10,4 +10,9 @@ class Post extends Model
     // {
     //     return 'slug';
     // }
+
+    public function scopeLatestFirst()
+    {
+        return $this->latest()->first();
+    }
 }
