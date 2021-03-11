@@ -15,4 +15,11 @@ class Post extends Model
     {
         return $this->latest()->first();
     }
+
+    public function scopeLatestPost()
+    {
+        return $this->latest()->first();
+    }
+
+
 }
